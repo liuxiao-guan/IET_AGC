@@ -23,16 +23,16 @@ We used RTX-4090 machines to train the models.
  We evaluate our method on CIFAR-10, CIFAR-100, AFHQ-DOG for unconditional generation, and LAION-10k for text-conditioned generation.
 
  ### CIFAR-10 and CIFAR-100 
- You can download from [here](https://www.cs.toronto.edu/~kriz/cifar.html),choose the python version.
+ You can download from [here](https://www.cs.toronto.edu/~kriz/cifar.html), and choose the python version.
 
  ### AFHQ-DOG
  You can download from [here](https://github.com/clovaai/stargan-v2). You can only choose the Dog subset.
 
 ### LAION-10k
-Download the LAION-10k split [here](https://drive.google.com/drive/folders/1TT1x1yT2B-mZNXuQPg7gqAhxN_fWCD__?usp=sharing) from [somepago](https://github.com/somepago/DCR)
+Download the LAION-10k split [here](https://drive.google.com/drive/folders/1TT1x1yT2B-mZNXuQPg7gqAhxN_fWCD__?usp=sharing) from [somepago](https://github.com/somepago/DCR).
 
 ## 4. Training and evaluate 
-Note: Before you run, you must change the paths which include the path of log, generate,dataset and so on. 
+Note: Before you run, you must change the paths which include the path of log, generate, datasets and so on. 
 
 #### Default Training 
 
@@ -44,7 +44,7 @@ bash com/default.sh
 bash com/com_c10_v.sh 
 ```
 
-+ ```main.py``` and ```main_fed.py```, the training file
++ ```main.py``` and ```main_fed.py```, the training files. The default setting is for CIFAR-10 dataset. We used one RTX-4090 FPU to train for almost one day.
 + ``` all_in.py``` the evaluate file, includes three parts: generate images, caculate the metric(MQ and FID), and make grid for visualization.
 ## 5. To Do
 - [ ] text-conditioned training 
