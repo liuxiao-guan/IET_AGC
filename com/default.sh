@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export CUDA_VISIBLE_DEVICES=3
+export CUDA_VISIBLE_DEVICES=0
 
 log_dir="/root/autodl-tmp/logs/Projects/IET-AGC/cifar10_default/"
 config_file="/root/autodl-fs/Project/IET-AGC/config/CIFAR10.txt"
