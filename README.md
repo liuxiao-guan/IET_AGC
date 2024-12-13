@@ -3,7 +3,8 @@ This is the implementation of Iterative Ensemble Training with Anti-Gradient Con
 
 Xiao Liu* , Xiaoliu Guan* , Yu Wu† , and Jiaxu Miao†
 
-[Paper](https://arxiv.org/abs/2407.15328)
+[Paper](https://link.springer.com/chapter/10.1007/978-3-031-73021-4_7)
+[arxiv](https://arxiv.org/abs/2407.15328)
 
 ## 1. Introduction
 We investigate the memorization phenomenon in the diffusion generative model through the lens of the loss.
@@ -51,11 +52,14 @@ bash com/com_c10_v.sh
 
 ## 6. Citing
 ```
-@article{liu2024iterative,
-  title={Iterative Ensemble Training with Anti-Gradient Control for Mitigating Memorization in Diffusion Models},
+@inproceedings{liu2025iterative,
+  title={Iterative ensemble training with anti-gradient control for mitigating memorization in diffusion models},
   author={Liu, Xiao and Guan, Xiaoliu and Wu, Yu and Miao, Jiaxu},
-  journal={arXiv preprint arXiv:2407.15328},
-  year={2024}
+  booktitle={European Conference on Computer Vision},
+  pages={108--123},
+  year={2025},
+  organization={Springer}
 }
 ```
-
+## 7. Acknowledgement
+We would like to thank this [project](https://github.com/w86763777/pytorch-ddpm) generously sharing their code, from which our code is adapted.
